@@ -7,6 +7,7 @@ block content
         a(href="/new")= "New message"
   h1= title
   each val in messages
-    p= val.text 
-    p= val.user
-    p= val.added
+    div(id="message")
+      p(id="text")= val.text 
+      p(id="name")= val.user
+      p(id="date")= val.added
