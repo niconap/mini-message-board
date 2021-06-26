@@ -1,6 +1,10 @@
 extends layout
 
 block content
+  nav
+    ul
+      li
+        a(href="/new")= "New message"
   h1= title
   each val in messages
     p= val.text 
